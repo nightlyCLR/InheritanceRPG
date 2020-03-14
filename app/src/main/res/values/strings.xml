@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">InheritanceRPG</string>
+
+    <string-array name="monsters">
+        <item>Golem</item>
+        <item>Salamander</item>
+        <item>Dragon</item>
+        <item>Sylph</item>
+        <item>Skeleton</item>
+    </string-array>
+
+    <string-array name="heroes">
+        <item>Warrior</item>
+        <item>Mage</item>
+        <item>Rogue</item>
+        <item>Cleric</item>
+        <item>Archer</item>
+        <item>Tank</item>
+        <item>Samurai</item>
+        <item>Summoner</item>
+        <item>Alchemist</item>
+        <item>Assassin</item>
+        <item>Hunter</item>
+        <item>Paladin</item>
+        <item>White Mage</item>
+        <item>Dancer</item>
+        <item>Bard</item>
+    </string-array>
+
+    <string-array name="growth">
+        <item>1-20</item>
+        <item>20-40</item>
+        <item>40-60</item>
+        <item>60-80</item>
+    </string-array>
+</resources>
