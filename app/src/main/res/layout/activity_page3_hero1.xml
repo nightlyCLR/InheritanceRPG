@@ -23,7 +23,8 @@
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="355dp" />
+        tools:layout_editor_absoluteY="355dp"
+        android:entries="@array/heroes"/>
 
     <Button
         android:id="@+id/la"
@@ -35,12 +36,5 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <Spinner
-        android:id="@+id/s3"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="426dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

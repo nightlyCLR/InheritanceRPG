@@ -15,9 +15,9 @@ import android.widget.Toast;
 
 public class page3Hero1 extends AppCompatActivity {
 
-    Spinner spin2,spin3;
+    Spinner spin2;
     Button btn2;
-    EditText e1, e2;
+    EditText e1;
     String yay;
     String value;
 
@@ -30,16 +30,13 @@ public class page3Hero1 extends AppCompatActivity {
         btn2 = findViewById(R.id.la);
         e1 = findViewById(R.id.et1);
         value = String.valueOf(e1);
+        spin2 = findViewById(R.id.s2);
 
-        final Spinner spin2 = (Spinner) findViewById(R.id.s2);
-        ArrayAdapter<CharSequence>adapter=ArrayAdapter.createFromResource(this,
-                R.array.heroes,android.R.layout.simple_spinner_item);
-        spin2.setAdapter(adapter);
         spin2.setOnItemSelectedListener(
                 new AdapterView.OnItemSelectedListener() {
                     @Override
                     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                        yay=spin2.getSelectedItem().toString();
+                        yay = spin2.getSelectedItem().toString();
                     }
 
                     @Override
@@ -48,9 +45,6 @@ public class page3Hero1 extends AppCompatActivity {
                     }
                 }
         );
-
-
-
 
         if (e1.equals("")) {
             Toast.makeText(page3Hero1.this,
