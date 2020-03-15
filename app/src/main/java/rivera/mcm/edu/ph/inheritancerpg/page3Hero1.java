@@ -46,16 +46,26 @@ public class page3Hero1 extends AppCompatActivity {
                 }
         );
 
-        if (e1.equals("")) {
-            Toast.makeText(page3Hero1.this,
-                    "Please complete the form",
-                    Toast.LENGTH_LONG).show();
-        } else {
-            Intent i = new Intent(page3Hero1.this, page4Hero2.class);
-            i.putExtra("et1", value);
-            i.putExtra("depart", String.valueOf(spin2.getSelectedItem()));
-            startActivity(i);
+        btn2.setText("next");
+        btn2.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (e1.equals("")) {
+                            Toast.makeText(page3Hero1.this,
+                                    "Please complete the form",
+                                    Toast.LENGTH_LONG).show();
+                        } else {
+                            Intent i = new Intent(page3Hero1.this, page4Hero2.class);
+                            i.putExtra("et1", value);
+                            i.putExtra("depart", String.valueOf(spin2.getSelectedItem()));
+                            startActivity(i);
 
-        }
+                        }
+                    }
+                }
+        );
+
+
     }
 }

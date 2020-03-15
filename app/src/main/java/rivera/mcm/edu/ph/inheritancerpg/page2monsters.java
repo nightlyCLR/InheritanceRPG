@@ -16,7 +16,7 @@ public class page2monsters extends AppCompatActivity {
     Spinner spin1;
     TextView a, b, c, d, e, f, g;
     Button btn3;
-    String value, monsters;
+    String monsters;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +49,7 @@ public class page2monsters extends AppCompatActivity {
                                     @Override
                                     public void onClick(View v) {
 
-                                        if ("Golem".equals(value)) {
+                                        if ("Golem".equals(monsters)) {
                                             Monsters bi = new Monsters(01,
                                                     150, 40, 30, 30, 25, 25,
                                                     "Definition: Golem," +
@@ -66,7 +66,7 @@ public class page2monsters extends AppCompatActivity {
                                             f.setText("Patck: " + bi.getMdef());
                                             g.setText(String.valueOf(bi.getDesc()));
 
-                                        } else if ("Salamander".equals(value)) {
+                                        } else if ("Salamander".equals(monsters)) {
                                             Monsters si = new Monsters(02,
                                                     80, 100, 10, 40, 10, 15,
                                                     "Definition: Salamander" +
@@ -82,7 +82,7 @@ public class page2monsters extends AppCompatActivity {
                                             f.setText("Patck: " + si.getMdef());
                                             g.setText(String.valueOf(si.getDesc()));
 
-                                        } else if ("Dragon".equals(value)) {
+                                        } else if ("Dragon".equals(monsters)) {
                                             Monsters si = new Monsters(03,
                                                     400, 150, 40, 40, 25, 25,
                                                     "Definition: Dragon" +
@@ -98,7 +98,7 @@ public class page2monsters extends AppCompatActivity {
                                             f.setText("Patck: " + si.getMdef());
                                             g.setText(String.valueOf(si.getDesc()));
 
-                                        } else if ("Sylph".equals(value)) {
+                                        } else if ("Sylph".equals(monsters)) {
                                             Monsters si = new Monsters(04,
                                                     200, 350, 20, 40, 25, 25,
                                                     "Definition: Sylph" +
@@ -114,7 +114,7 @@ public class page2monsters extends AppCompatActivity {
                                             f.setText("Patck: " + si.getMdef());
                                             g.setText(String.valueOf(si.getDesc()));
 
-                                        } else if ("Skeleton".equals(value)) {
+                                        } else if ("Skeleton".equals(monsters)) {
                                             Monsters si = new Monsters(05,
                                                     100, 80, 30, 10, 25, 15,
                                                     "Definition: Skeleton" +
