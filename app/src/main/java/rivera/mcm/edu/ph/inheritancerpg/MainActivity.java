@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent lu = new Intent(MainActivity.this, page3Hero1.class);
+                        Intent lu = new Intent(MainActivity.this, page4Hero2.class);
                         startActivity(lu);
                     }
                 }

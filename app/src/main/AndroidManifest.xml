@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".page4Hero2"></activity>
-        <activity android:name=".page3Hero1" />
         <activity android:name=".page2monsters" />
         <activity android:name=".MainActivity">
             <intent-filter>

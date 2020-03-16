@@ -3,7 +3,7 @@ package rivera.mcm.edu.ph.inheritancerpg;
 public class Hero extends Chara {
     private int heroID;
     private int level;
-    private String heroClass;
+    private String heroClass, desc;
     private double baseSTR, baseAGI, baseINT;
     private double strGrowth, agiGrowth, intGrowth;
 
@@ -22,7 +22,8 @@ public class Hero extends Chara {
                 double baseINT,
                 double strGrowth,
                 double agiGrowth,
-                double intGrowth) {
+                double intGrowth,
+                String desc) {
 
         super(id, basehp, basemp, patk, matk, pdef, mdef);
         this.heroClass = heroClass;
@@ -33,6 +34,7 @@ public class Hero extends Chara {
         this.strGrowth = strGrowth;
         this.agiGrowth = agiGrowth;
         this.intGrowth = intGrowth;
+        this.desc = desc;
     }
 
     //imported getters and setters
@@ -128,6 +130,13 @@ public class Hero extends Chara {
     }
     public double getIntGrowth() {
         return intGrowth;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+    public String getDesc() {
+        return desc;
     }
 
     //methods

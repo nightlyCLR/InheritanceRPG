@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -17,6 +18,7 @@ public class page2monsters extends AppCompatActivity {
     TextView a, b, c, d, e, f, g;
     Button btn3;
     String monsters;
+    ImageView iv1, iv2, iv3, iv4, iv5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +34,17 @@ public class page2monsters extends AppCompatActivity {
         e = findViewById(R.id.tv4);
         f = findViewById(R.id.tv5);
         g = findViewById(R.id.descript);
+        iv1 = findViewById(R.id.ivSal);
+        iv2 = findViewById(R.id.iv2Gol);
+        iv3 = findViewById(R.id.iv3Dra);
+        iv4 = findViewById(R.id.iv4Ske);
+        iv5 = findViewById(R.id.iv5Syl);
 
+        iv1.setVisibility(View.GONE);
+        iv2.setVisibility(View.GONE);
+        iv3.setVisibility(View.GONE);
+        iv4.setVisibility(View.GONE);
+        iv5.setVisibility(View.GONE);
 
         spin1 = findViewById(R.id.s1);
 
@@ -57,6 +69,12 @@ public class page2monsters extends AppCompatActivity {
                                                             "the arts of dinine magic, an easy" +
                                                             "counter to the undead race.");
 
+                                            iv2.setVisibility(View.VISIBLE);
+                                            iv1.setVisibility(View.GONE);
+                                            iv3.setVisibility(View.GONE);
+                                            iv4.setVisibility(View.GONE);
+                                            iv5.setVisibility(View.GONE);
+
 
                                             a.setText("HP: " + bi.getBasehp());
                                             b.setText("MP: " + bi.getBasemp());
@@ -74,6 +92,12 @@ public class page2monsters extends AppCompatActivity {
                                                             "is still considered a threat by" +
                                                             "due to it's burning capabilities.");
 
+                                            iv1.setVisibility(View.VISIBLE);
+                                            iv2.setVisibility(View.GONE);
+                                            iv3.setVisibility(View.GONE);
+                                            iv4.setVisibility(View.GONE);
+                                            iv5.setVisibility(View.GONE);
+
                                             a.setText("HP: " + si.getBasehp());
                                             b.setText("MP: " + si.getBasemp());
                                             c.setText("Mdef: " + si.getPatk());
@@ -86,9 +110,15 @@ public class page2monsters extends AppCompatActivity {
                                             Monsters si = new Monsters(03,
                                                     400, 150, 40, 40, 25, 25,
                                                     "Definition: Dragon" +
-                                                            "One that is feared by all and could easily " +
+                                                            " One that is feared by all and could easily " +
                                                             "turn the tides of battle due to it's " +
                                                             "ferocious breathand steeel hard scales");
+
+                                            iv3.setVisibility(View.VISIBLE);
+                                            iv1.setVisibility(View.GONE);
+                                            iv2.setVisibility(View.GONE);
+                                            iv4.setVisibility(View.GONE);
+                                            iv5.setVisibility(View.GONE);
 
                                             a.setText("HP: " + si.getBasehp());
                                             b.setText("MP: " + si.getBasemp());
@@ -102,9 +132,15 @@ public class page2monsters extends AppCompatActivity {
                                             Monsters si = new Monsters(04,
                                                     200, 350, 20, 40, 25, 25,
                                                     "Definition: Sylph" +
-                                                            "A priest who devoted its life into the " +
+                                                            " A priest who devoted its life into the " +
                                                             "art of hearing primarily excels at the " +
-                                                            "backline kepping and sustaining a battle.");
+                                                            "backline keeping and sustaining a battle.");
+
+                                            iv5.setVisibility(View.VISIBLE);
+                                            iv1.setVisibility(View.GONE);
+                                            iv3.setVisibility(View.GONE);
+                                            iv3.setVisibility(View.GONE);
+                                            iv4.setVisibility(View.GONE);
 
                                             a.setText("HP: " + si.getBasehp());
                                             b.setText("MP: " + si.getBasemp());
@@ -118,9 +154,15 @@ public class page2monsters extends AppCompatActivity {
                                             Monsters si = new Monsters(05,
                                                     100, 80, 30, 10, 25, 15,
                                                     "Definition: Skeleton" +
-                                                            "Versatile and is typically a pawn in every " +
+                                                            " Versatile and is typically a pawn in every " +
                                                             "field but is very useful due to it spiking " +
-                                                            "fear into mens hearts with it's aura.");
+                                                            "fear into men's hearts with it's aura.");
+
+                                            iv4.setVisibility(View.VISIBLE);
+                                            iv1.setVisibility(View.GONE);
+                                            iv3.setVisibility(View.GONE);
+                                            iv5.setVisibility(View.GONE);
+                                            iv2.setVisibility(View.GONE);
 
                                             a.setText("HP: " + si.getBasehp());
                                             b.setText("MP: " + si.getBasemp());
